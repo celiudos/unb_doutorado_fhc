@@ -399,7 +399,8 @@ class UIUtils:
             no_file,
         )
 
-        self.df_real = self.utils.formatar_dataset_real("outputs/questionario_real.csv")
+        self.df_real = self.utils.formatar_dataset_real("inputs/questionario_real.csv")
+        Path("outputs").mkdir(parents=True, exist_ok=True)
         self.df_real.to_csv("outputs/questionario_real_formatado.csv", index=False)
 
         yield (
@@ -502,12 +503,10 @@ class UIUtils:
 
     def _carregar_proporcoes_reais(self):
         """Lê o dataset real e retorna proporções para preencher os campos da UI."""
-        csv_path = Path("outputs/questionario_real.csv")
-        if not csv_path.exists():
-            csv_path = Path("inputs/questionario_real.csv")
+        csv_path = Path("inputs/questionario_real.csv")
         if not csv_path.exists():
             raise gr.Error(
-                "Arquivo questionario_real.csv não encontrado em outputs/ nem inputs/."
+                "Arquivo questionario_real.csv não encontrado em inputs/."
             )
 
         df = GerarDadosUtils(n_personas=1).formatar_dataset_real(str(csv_path))
@@ -694,7 +693,7 @@ class UIUtils:
                         "Gerencie o arquivo de respostas reais usado como base para a geração sintética."
                     )
 
-                    CSV_PATH = Path("outputs/questionario_real.csv")
+                    CSV_PATH = Path("inputs/questionario_real.csv")
                     COLUNAS_ESPERADAS = [
                         "idade",
                         "sexo",
@@ -737,16 +736,10 @@ class UIUtils:
                         "TP4",
                     ]
 
-                    CSV_PATH_INPUT = Path("inputs/questionario_real.csv")
-
                     # --- Status atual ---
                     if CSV_PATH.exists():
                         status_dataset = gr.Markdown(
                             f"✅ Arquivo encontrado: `{CSV_PATH}`"
-                        )
-                    elif CSV_PATH_INPUT.exists():
-                        status_dataset = gr.Markdown(
-                            f"ℹ️ Arquivo inicial encontrado em `{CSV_PATH_INPUT}`. Faça upload para salvar em `{CSV_PATH}`."
                         )
                     else:
                         status_dataset = gr.Markdown(
@@ -755,15 +748,14 @@ class UIUtils:
 
                     # --- Visualização do dataset atual ---
                     def _carregar_dataset_atual():
-                        path = CSV_PATH if CSV_PATH.exists() else CSV_PATH_INPUT
-                        if path.exists():
+                        if CSV_PATH.exists():
                             try:
                                 df = (
-                                    self.utils.formatar_dataset_real(str(path))
+                                    self.utils.formatar_dataset_real(str(CSV_PATH))
                                     if self.utils
                                     else GerarDadosUtils(
                                         n_personas=1
-                                    ).formatar_dataset_real(str(path))
+                                    ).formatar_dataset_real(str(CSV_PATH))
                                 )
                                 cols_order = [
                                     c for c in COLUNAS_ESPERADAS if c in df.columns
