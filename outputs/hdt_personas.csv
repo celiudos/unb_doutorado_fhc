@@ -1,4 +1,0 @@
-persona_id,idade,sexo,setor_trabalha,porte_org,funcao_cargo,tempo_atuacao_org_anos,ja_recebeu_treinamento,pais
-HDT_001,41,Feminino,Pública,Grande (250 ou mais),Direção/executivo,20,Não,Brasil
-HDT_002,52,Masculino,Pública,Grande (250 ou mais),"Operacional/técnica (analista, desenvolvedor, técnico)",16,Não,Brasil
-HDT_003,48,Feminino,Privada,Grande (250 ou mais),"Operacional/técnica (analista, desenvolvedor, técnico)",30,Sim,Brasil
