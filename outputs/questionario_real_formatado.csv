@@ -1,0 +1,47 @@
+SV1,SV2,SV3,SV4,SG1,SG2,SG3,SG4,SU1,SU2,SU3,SU4,SM1,SM2,SM3,SM4,SF1,SF2,SF3,SF4,SY1,SY2,SY3,SY4,SK1,SK2,SK3,SK4,TP1,TP2,TP3,TP4,idade,sexo,setor_trabalha,porte_org,funcao_cargo,tempo_atuacao_org_anos,ja_recebeu_treinamento
+6,6,5,4,6,3,3,2,6,7,7,6,7,5,4,2,3,2,3,6,2,4,5,5,7,6,5,4,5,4,3,2,36,Masculino,Pública,Grande (250 ou mais),"Operacional/técnica (analista, desenvolvedor, técnico)",11,Não
+7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,3,7,6,7,7,7,7,6,6,7,4,7,7,7,5,6,7,24,Masculino,Privada,Grande (250 ou mais),"Operacional/técnica (analista, desenvolvedor, técnico)",0,Sim
+7,7,7,6,6,7,6,6,6,4,6,6,5,5,6,4,5,4,4,7,6,6,6,6,6,6,6,6,6,6,6,6,23,Masculino,Privada,Média (50 a 249),"Operacional/técnica (analista, desenvolvedor, técnico)",1,Não
+6,5,7,6,5,5,6,4,5,5,6,4,5,5,6,1,2,2,6,5,7,7,6,6,4,4,4,1,6,4,4,1,27,Masculino,Privada,Média (50 a 249),"Operacional/técnica (analista, desenvolvedor, técnico)",0,Sim
+7,7,6,5,5,5,6,4,5,7,7,6,6,5,6,1,4,3,5,2,4,3,4,5,6,5,5,5,4,4,5,6,44,Masculino,Pública,Grande (250 ou mais),"Operacional/técnica (analista, desenvolvedor, técnico)",19,Sim
+5,4,5,4,5,4,5,4,4,5,5,5,5,5,5,3,3,3,3,4,5,5,5,5,5,5,5,3,4,2,5,2,50,Masculino,Pública,Grande (250 ou mais),"Operacional/técnica (analista, desenvolvedor, técnico)",27,Não
+4,4,4,4,4,3,4,2,3,3,3,4,4,4,5,1,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,47,Masculino,Pública,Grande (250 ou mais),"Operacional/técnica (analista, desenvolvedor, técnico)",14,Não
+5,5,6,6,4,5,4,4,6,7,7,6,5,5,4,5,5,5,5,4,5,5,4,4,6,4,4,4,5,5,6,5,48,Feminino,Pública,Grande (250 ou mais),"Operacional/técnica (analista, desenvolvedor, técnico)",24,Sim
+4,4,5,4,3,4,4,7,6,5,5,3,5,4,1,1,1,3,1,6,5,5,5,6,3,3,6,2,3,1,5,2,55,Masculino,Pública,Grande (250 ou mais),Coordenação/supervisão,18,Sim
+6,6,7,6,5,6,6,5,5,6,5,5,4,4,5,1,4,5,4,5,5,5,5,4,5,6,6,4,5,5,4,1,38,Masculino,Pública,Grande (250 ou mais),"Operacional/técnica (analista, desenvolvedor, técnico)",2,Não
+5,5,5,4,3,3,2,2,3,2,2,2,3,3,7,4,6,5,2,4,2,5,4,3,1,1,1,1,4,2,4,1,40,Masculino,Pública,Grande (250 ou mais),"Operacional/técnica (analista, desenvolvedor, técnico)",1,Não
+7,6,6,6,7,7,6,5,6,7,7,6,6,7,6,4,7,6,5,6,7,7,7,7,6,4,4,4,7,6,5,4,42,Masculino,Pública,Grande (250 ou mais),Gerência,1,Sim
+7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,4,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,30,Feminino,Privada,Média (50 a 249),"Operacional/técnica (analista, desenvolvedor, técnico)",2,Sim
+7,6,7,6,7,7,6,5,6,5,5,5,7,6,7,4,7,6,4,5,7,7,7,7,6,6,5,4,6,4,6,6,34,Feminino,Pública,Grande (250 ou mais),"Operacional/técnica (analista, desenvolvedor, técnico)",1,Não
+7,7,7,7,6,7,7,4,6,5,7,6,7,7,7,4,5,6,3,7,7,7,7,7,7,6,7,7,7,6,4,6,30,Prefiro não informar,Pública,Pequena (10 a 49),Coordenação/supervisão,0,Não
+3,5,6,5,6,3,2,5,3,6,6,3,3,4,4,1,6,3,3,5,6,7,4,4,7,4,5,4,6,3,3,1,42,Masculino,Pública,Grande (250 ou mais),"Operacional/técnica (analista, desenvolvedor, técnico)",16,Não
+5,5,6,6,5,5,6,4,6,6,6,6,5,5,4,1,4,4,3,4,5,4,4,4,6,5,6,4,4,3,6,4,41,Masculino,Pública,Grande (250 ou mais),"Operacional/técnica (analista, desenvolvedor, técnico)",20,Sim
+7,6,7,3,4,3,4,3,2,1,1,6,4,4,7,1,1,1,1,2,2,6,5,5,1,3,3,1,3,1,5,1,23,Masculino,Privada,Média (50 a 249),"Operacional/técnica (analista, desenvolvedor, técnico)",5,Não
+6,6,7,5,6,4,6,4,6,7,7,6,6,5,4,1,5,4,5,6,6,6,5,5,6,5,5,5,5,4,6,5,42,Masculino,Pública,Grande (250 ou mais),Coordenação/supervisão,19,Sim
+6,4,7,5,5,3,3,3,1,1,5,2,4,5,7,2,6,4,2,6,5,6,6,5,3,3,1,1,6,1,6,3,37,Masculino,Privada,Média (50 a 249),Coordenação/supervisão,12,Não
+6,6,7,5,5,6,4,5,6,7,7,6,4,6,5,1,5,3,5,5,4,6,5,5,6,5,6,5,5,4,4,4,27,Feminino,Privada,Média (50 a 249),"Operacional/técnica (analista, desenvolvedor, técnico)",4,Sim
+5,6,7,5,6,5,5,5,5,7,7,6,5,4,5,3,3,3,2,5,5,5,5,5,5,5,5,3,4,3,5,3,46,Masculino,Pública,Grande (250 ou mais),"Operacional/técnica (analista, desenvolvedor, técnico)",21,Sim
+7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,58,Masculino,Privada,Grande (250 ou mais),"Operacional/técnica (analista, desenvolvedor, técnico)",28,Sim
+7,7,7,7,7,7,4,4,6,7,7,7,7,7,7,1,7,4,1,4,1,7,4,4,7,4,4,4,7,1,5,2,48,Feminino,Pública,Grande (250 ou mais),"Operacional/técnica (analista, desenvolvedor, técnico)",2,Não
+7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,34,Masculino,Privada,Grande (250 ou mais),Coordenação/supervisão,5,Sim
+7,2,7,7,6,5,6,2,5,4,4,4,7,7,7,1,3,1,2,4,7,7,7,7,7,7,4,1,4,4,4,1,23,Masculino,Privada,Média (50 a 249),"Operacional/técnica (analista, desenvolvedor, técnico)",5,Sim
+6,7,7,7,6,7,6,6,6,7,7,7,6,7,6,4,5,6,7,7,6,7,6,7,6,4,6,7,7,6,6,7,52,Masculino,Pública,Grande (250 ou mais),Coordenação/supervisão,29,Sim
+7,7,7,7,7,7,7,7,7,7,7,7,6,6,6,1,7,7,4,7,7,7,7,7,7,7,7,5,7,7,6,1,26,Masculino,Privada,Média (50 a 249),"Operacional/técnica (analista, desenvolvedor, técnico)",8,Não
+7,7,7,7,7,7,7,7,7,7,6,7,7,7,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,27,Masculino,Privada,Média (50 a 249),Coordenação/supervisão,15,Sim
+3,2,5,1,3,2,2,1,1,1,1,1,2,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,4,52,Feminino,Privada,Grande (250 ou mais),"Operacional/técnica (analista, desenvolvedor, técnico)",3,Não
+6,6,7,6,6,6,6,6,6,6,6,6,6,6,6,4,6,6,4,6,6,6,6,6,6,6,6,6,6,4,6,4,25,Feminino,Privada,Média (50 a 249),"Operacional/técnica (analista, desenvolvedor, técnico)",3,Não
+6,7,7,7,7,6,7,5,7,6,4,6,7,7,7,1,6,6,6,6,6,7,7,7,6,5,5,6,7,6,7,7,50,Masculino,Pública,Grande (250 ou mais),Direção/executivo,16,Sim
+7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,6,5,5,46,Masculino,Pública,Grande (250 ou mais),"Operacional/técnica (analista, desenvolvedor, técnico)",15,Sim
+7,7,7,7,7,7,7,7,7,7,7,7,7,7,4,4,7,7,7,7,7,7,7,7,7,4,7,4,7,7,7,4,49,Masculino,Pública,Grande (250 ou mais),"Operacional/técnica (analista, desenvolvedor, técnico)",18,Sim
+6,6,6,6,6,6,6,5,6,6,6,6,6,6,6,5,6,6,5,6,6,6,6,6,6,6,6,6,6,6,6,6,50,Masculino,Pública,Grande (250 ou mais),"Operacional/técnica (analista, desenvolvedor, técnico)",3,Sim
+3,5,7,5,6,3,6,6,5,6,4,4,6,6,5,2,5,5,2,4,6,6,6,6,6,4,4,4,5,6,6,4,45,Masculino,Pública,Grande (250 ou mais),"Operacional/técnica (analista, desenvolvedor, técnico)",20,Sim
+7,7,7,7,6,6,7,7,7,7,7,7,7,7,7,7,7,6,7,7,6,7,7,7,7,7,7,7,7,6,7,7,32,Masculino,Privada,Grande (250 ou mais),Coordenação/supervisão,2,Sim
+4,6,6,4,4,4,3,4,4,6,6,5,6,4,5,3,4,5,3,4,3,4,5,4,4,5,4,5,5,4,5,2,58,Masculino,Pública,Grande (250 ou mais),Coordenação/supervisão,31,Sim
+7,4,7,5,4,3,4,4,6,7,7,4,4,4,5,2,5,5,1,4,6,7,7,6,4,4,4,1,4,3,6,6,45,Masculino,Pública,Grande (250 ou mais),"Operacional/técnica (analista, desenvolvedor, técnico)",20,Não
+2,3,4,2,2,2,2,2,3,3,3,1,2,2,1,1,1,1,1,1,2,3,2,2,4,4,4,3,2,1,4,1,43,Masculino,Pública,Grande (250 ou mais),"Operacional/técnica (analista, desenvolvedor, técnico)",11,Não
+5,5,6,5,5,5,5,5,6,6,6,5,5,5,6,1,4,3,3,4,4,4,3,4,6,6,6,4,4,2,4,5,43,Masculino,Pública,Grande (250 ou mais),Coordenação/supervisão,18,Não
+6,5,6,7,6,6,6,5,6,7,6,6,6,5,6,2,5,6,5,5,6,5,5,5,6,6,5,4,6,5,6,6,49,Feminino,Pública,Grande (250 ou mais),"Operacional/técnica (analista, desenvolvedor, técnico)",26,Não
+7,7,7,7,6,7,7,7,7,7,7,7,7,6,6,6,6,6,5,6,6,7,7,7,7,6,6,6,6,6,6,6,40,Masculino,Economia mista,Grande (250 ou mais),Gerência,17,Sim
+7,5,7,6,6,5,4,5,6,7,7,5,4,7,7,1,6,6,7,7,7,7,7,7,5,4,3,3,7,4,6,7,49,Masculino,Pública,Grande (250 ou mais),"Operacional/técnica (analista, desenvolvedor, técnico)",1,Não
+2,2,5,3,3,3,4,3,4,7,7,6,6,5,7,1,2,3,1,7,1,1,2,1,7,6,4,1,2,2,4,4,50,Masculino,Pública,Grande (250 ou mais),"Operacional/técnica (analista, desenvolvedor, técnico)",13,Não
+4,5,4,4,5,5,5,4,5,6,6,4,6,4,6,4,3,3,3,5,4,5,5,5,6,6,5,5,6,6,6,5,59,Masculino,Pública,Grande (250 ou mais),"Operacional/técnica (analista, desenvolvedor, técnico)",29,Não

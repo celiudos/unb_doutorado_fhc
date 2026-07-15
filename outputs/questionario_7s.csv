@@ -1,0 +1,33 @@
+item,dimensao,tipo_variavel,afirmacao
+SV1,Shared Values,independente,Minha empresa compartilha a importância e o valor da proteção tecnológica.
+SV2,Shared Values,independente,Minha empresa inclui o conceito de proteção tecnológica em suas metas de gestão.
+SV3,Shared Values,independente,Minha organização está ciente da necessidade de proteção tecnológica.
+SV4,Shared Values,independente,Minha empresa tem uma cultura organizacional que protege sua tecnologia.
+SG1,Strategy,independente,Minha empresa possui uma estratégia de proteção tecnológica.
+SG2,Strategy,independente,"Para minha empresa, a proteção tecnológica é uma prioridade estratégica."
+SG3,Strategy,independente,Minha empresa possui um plano de proteção tecnológica.
+SG4,Strategy,independente,Minha empresa investe um orçamento suficiente para proteger sua tecnologia.
+SU1,Structure,independente,Minha empresa possui uma estrutura organizacional sistemática para proteger sua tecnologia.
+SU2,Structure,independente,Minha empresa possui um departamento encarregado de suas responsabilidades de proteção tecnológica.
+SU3,Structure,independente,Minha empresa possui um gerente encarregado das responsabilidades de proteção tecnológica.
+SU4,Structure,independente,Minha empresa opera e gerencia suas responsabilidades de proteção tecnológica de forma eficiente.
+SM1,Systems,independente,Minha empresa possui os regulamentos relevantes para proteger sua tecnologia.
+SM2,Systems,independente,Minha empresa controla e monitora seus dados técnicos.
+SM3,Systems,independente,Minha empresa usa acordos de confidencialidade e não concorrência para proteger sua tecnologia.
+SM4,Systems,independente,Minha empresa usa recompensas para funcionários que são excelentes em proteger a tecnologia da empresa e punições para aqueles que violam os regulamentos.
+SF1,Staff,independente,Os membros da minha empresa entendem seus papéis e responsabilidades na proteção da tecnologia da empresa.
+SF2,Staff,independente,Os membros da minha empresa aderem estritamente aos regulamentos e diretrizes relevantes para proteger a tecnologia da empresa.
+SF3,Staff,independente,Os membros da minha empresa recebem treinamento relacionado à proteção tecnológica.
+SF4,Staff,independente,Os membros da minha empresa respeitam os gerentes encarregados da proteção tecnológica.
+SY1,Style,independente,A equipe de gestão da minha empresa tem um alto nível de interesse em proteção tecnológica.
+SY2,Style,independente,A equipe de gestão da minha empresa reconhece que a proteção tecnológica é importante para as atividades de negócios.
+SY3,Style,independente,A equipe de gestão da minha empresa apoia ativamente a proteção da tecnologia da empresa.
+SY4,Style,independente,A equipe de gestão da minha empresa leva a questão da proteção tecnológica em consideração durante os processos de tomada de decisão.
+SK1,Skills,independente,"Na minha empresa, a divisão encarregada da proteção da tecnologia tem expertise em proteção tecnológica."
+SK2,Skills,independente,"Na minha empresa, os membros do pessoal encarregado da proteção tecnológica têm certificações profissionais."
+SK3,Skills,independente,"Na minha empresa, a divisão ou o pessoal encarregado da proteção tecnológica recebe o treinamento profissional relevante."
+SK4,Skills,independente,Minha empresa possui um manual de resposta para a ocorrência de vazamentos de tecnologia.
+TP1,Technology Protection,dependente,Minha empresa protege bem a confidencialidade relacionada à tecnologia.
+TP2,Technology Protection,dependente,Minha empresa é melhor no gerenciamento de segurança do que outras empresas.
+TP3,Technology Protection,dependente,Minha empresa tem menos vazamentos de tecnologia ou incidentes de segurança em comparação com outras empresas.
+TP4,Technology Protection,dependente,Minha empresa nunca sofreu grandes danos por vazamentos de tecnologia ou incidentes de segurança.
