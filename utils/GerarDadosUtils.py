@@ -578,7 +578,8 @@ Use escala Likert de 1 a 7:
 Regras:
 - Responda com variabilidade compatível com o perfil.
 - Considere que empresas maiores e perfis com maior envolvimento em segurança tendem a perceber controles mais maduros, mas não torne isso determinístico.
-- Retorne somente JSON válido, sem markdown e sem comentários.
+- Retorne somente JSON válido, sem markdown, sem comentários e sem texto fora do JSON.
+- NÃO use quebras de linha dentro de valores de string.
 - O JSON deve ter exatamente as chaves: persona_id, respostas, justificativa_curta.
 - respostas deve mapear cada item para um número inteiro entre 1 e 7.
 
@@ -587,13 +588,25 @@ Distribuição-alvo aproximada por item:
 
     @staticmethod
     def _extrair_json(texto):
+        texto = texto.strip()
+        # Remove blocos markdown ```json ... ```
+        texto = re.sub(r"```(?:json)?\s*", "", texto).strip().rstrip("`")
         try:
             return json.loads(texto)
         except json.JSONDecodeError:
-            match = re.search(r"\{.*\}", texto, flags=re.DOTALL)
-            if not match:
-                raise
-            return json.loads(match.group(0))
+            pass
+        # Tenta extrair o maior bloco {...} do texto
+        match = re.search(r"\{.*\}", texto, flags=re.DOTALL)
+        if not match:
+            raise ValueError(f"Nenhum JSON encontrado na resposta: {texto[:200]}")
+        candidato = match.group(0)
+        try:
+            return json.loads(candidato)
+        except json.JSONDecodeError:
+            pass
+        # Fallback: remove quebras de linha dentro de strings e tenta novamente
+        candidato_limpo = re.sub(r'(?<=":)\s*"([^"]*)"', lambda m: '"' + m.group(1).replace('\n', ' ').replace('\r', '') + '"', candidato)
+        return json.loads(candidato_limpo)
 
     def _normalizar_respostas(self, resultado, persona):
         respostas = resultado.get("respostas", {})
