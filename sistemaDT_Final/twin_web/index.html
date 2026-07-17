@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digital Twin — Proteção Tecnológica</title>
+<link rel="stylesheet" href="/static/styles.css?v=20">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+<div id="login-view" class="login-wrap">
+  <div class="login-card">
+    <div class="login-title">
+      <h1>Digital Twin Cognitivo-Organizacional</h1>
+      <button type="button" id="login-info-btn" class="info-btn" aria-label="Usuários de demonstração"
+              aria-expanded="false" title="Usuários de demonstração">i</button>
+    </div>
+    <p class="subtitle">Proteção Tecnológica · 7S · PLS-SEM — SPEC v2.1 (Fase 1)</p>
+    <div id="login-info-pop" class="info-pop" hidden>
+      <strong>Perfis de acesso</strong>
+      <table>
+        <tr><td><code>admin</code></td>
+            <td>Pode fazer tudo, inclusive calibrar/importar modelos (aba Governança)</td></tr>
+        <tr><td><code>analista</code></td>
+            <td>Pode gerar, simular, emitir e decidir recomendações</td></tr>
+        <tr><td><code>leitor</code></td>
+            <td>Somente leitura</td></tr>
+      </table>
+      <p class="note">Solicite a senha ao administrador do ambiente.</p>
+    </div>
+    <form id="login-form">
+      <label>Usuário <input id="login-user" autocomplete="username" required></label>
+      <label>Senha <input id="login-pass" type="password" autocomplete="current-password" required></label>
+      <button type="submit">Entrar</button>
+      <p id="login-error" class="error"></p>
+    </form>
+  </div>
+</div>
+
+<div id="app-view" hidden>
+  <header>
+    <div>
+      <strong>Digital Twin — Proteção Tecnológica</strong>
+      <span class="badge maturity" title="Declaração de maturidade (SPEC 5.4 / CA9)">Maturidade 1–3</span>
+    </div>
+    <div class="header-right">
+      <select id="model-select" title="Modelo calibrado"></select>
+      <span id="user-info"></span>
+      <button id="logout" class="ghost">Sair</button>
+    </div>
+  </header>
+
+  <nav id="tabs">
+    <button data-tab="overview" class="active">Visão Geral</button>
+    <button data-tab="predictive">Preditivo (what-if)</button>
+    <button data-tab="prescriptive">Prescritivo</button>
+    <button data-tab="validation">Validações</button>
+    <button data-tab="governance">Governança</button>
+  </nav>
+
+  <main>
+    <section id="tab-overview" class="tab active">
+      <h2>Estado atual (onda 1 — dados reais da calibração)</h2>
+      <div class="grid2">
+        <div class="card"><h3>Construtos (média 1–7)</h3><div class="chartbox"><canvas id="chart-constructs"></canvas></div></div>
+        <div class="card">
+          <h3>KPIs</h3>
+          <div id="kpis" class="kpis"></div>
+          <p class="note">Modo descritivo: estado dos 7S e da TP na onda de calibração.
+          Diagnóstico entre ondas (drift/anomalias) chega na Fase 2.</p>
+        </div>
+      </div>
+
+      <div class="card" id="overview-guide">
+        <h3>Como ler estes índices</h3>
+        <p class="note">Cada número é a <strong>média das respostas</strong> daquele tema, numa escala de
+        <strong>1 (discordo totalmente) a 7 (concordo totalmente)</strong>. O ponto neutro é 4: acima disso a
+        percepção é positiva; abaixo, negativa. Quanto mais perto de 7, mais forte a organização se percebe
+        naquele aspecto. A coluna <strong>β</strong> é o peso de cada tema sobre a Proteção Tecnológica no
+        modelo PLS-SEM: quanto maior o β, mais o what-if desloca a TP ao mexer naquele tema (β negativo ou
+        perto de zero = pouca ou nenhuma alavancagem).</p>
+        <div id="scale-legend" class="scale-legend"></div>
+        <table id="tbl-reading"><thead>
+          <tr><th>Tema</th><th>Índice (1–7)</th><th>Situação</th>
+              <th title="Coeficiente estrutural do PLS-SEM: quanto este tema pesa sobre a Proteção Tecnológica. É o número que o what-if usa para propagar a intervenção.">Peso no modelo (β)</th>
+              <th>Quanto vale melhorar</th><th>Leitura</th></tr>
+        </thead><tbody></tbody></table>
+        <p class="note value-chain" id="value-chain"></p>
+      </div>
+    </section>
+
+    <section id="tab-predictive" class="tab">
+      <h2>What-if</h2>
+      <div class="grid2">
+        <div class="card">
+          <h3>Intervenções (shift em DP por construto)</h3>
+          <div id="sliders"></div>
+          <div class="sim-actions">
+            <button id="btn-simulate">Simular</button>
+          </div>
+          <div class="secondary-actions">
+            <button id="btn-wargame" class="ghost subtle">Cenário: campanha de phishing</button>
+            <button id="btn-reset" class="ghost subtle">Zerar</button>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Efeito projetado em TP</h3>
+          <div id="sim-result" class="sim-result"><p class="note">Ajuste os sliders e simule.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tab-prescriptive" class="tab">
+      <h2>Prescritivo <span class="badge">humano decide — Seção 7</span></h2>
+      <div class="grid2">
+        <div class="card"><h3>Tornado — ΔTP por ±1 DP</h3><div class="chartbox"><canvas id="chart-tornado"></canvas></div></div>
+        <div class="card"><h3>IPMA — importância × desempenho</h3><div class="chartbox"><canvas id="chart-ipma"></canvas></div></div>
+      </div>
+      <div class="card">
+        <h3>IPMA por item (indicador) — qual pergunta é a melhor alavanca</h3>
+        <div class="chartbox chartbox-tall"><canvas id="chart-ipma-items"></canvas></div>
+        <p class="note">Importância = peso do item no construto × efeito total do construto em TP.
+        Passe o mouse em um ponto para ver o item. Prioridade: quadrante direito-inferior
+        (alta importância, baixo desempenho).</p>
+      </div>
+      <div class="card">
+        <div class="row spread">
+          <h3>Recomendações de intervenção (nudges)</h3>
+          <div class="row" style="margin-top:0">
+            <button id="btn-report" class="ghost" title="PDF somente com as recomendações aceitas">Baixar relatório PDF (aceitas)</button>
+            <button id="btn-clear-accepted" class="ghost" title="Arquiva as aceitas (a trilha de auditoria é preservada)">Zerar aceitas</button>
+            <button id="btn-emit-recs">Emitir novas recomendações</button>
+          </div>
+        </div>
+        <div id="recs"></div>
+      </div>
+    </section>
+
+    <section id="tab-validation" class="tab">
+      <h2>Validações do gêmeo (RF3/RF8)</h2>
+      <div class="card">
+        <h3>Confiabilidade e validade convergente</h3>
+        <table id="tbl-reliability"><thead>
+          <tr><th>Construto</th><th>α</th><th>rho_A</th><th>CR (rho_c)</th><th>AVE</th><th>Status</th></tr>
+        </thead><tbody></tbody></table>
+        <p class="note">Limiares: α/CR ≥ 0.70 · AVE ≥ 0.50 · HTMT &lt; 0.85.</p>
+        <p id="htmt-summary"></p>
+      </div>
+      <div class="card" hidden>
+        <div class="row spread">
+          <h3>Equivalência real ↔ sintético</h3>
+          <button id="btn-equivalence">Gerar sintético (N=142) e validar</button>
+        </div>
+        <div id="equiv-result"><p class="note">MGA por permutação + MICOM (passo 2) + congruência de cargas.</p></div>
+      </div>
+    </section>
+
+    <section id="tab-governance" class="tab">
+      <h2>Governança (SR 11-7 · Seções 8 e 12)</h2>
+      <div class="grid2">
+        <div class="card"><h3>Inventário do modelo</h3><dl id="gov-model" class="dl"></dl></div>
+        <div class="card">
+          <h3>Caminhos estruturais</h3>
+          <button id="btn-bootstrap" class="ghost" hidden>Rodar bootstrap (500 reamostras)</button>
+          <table id="tbl-paths"><thead>
+            <tr><th>Construto</th><th>β</th></tr>
+          </thead><tbody></tbody></table>
+        </div>
+      </div>
+      <div class="card" id="card-import">
+        <h3>Calibrar novo modelo (admin)</h3>
+        <div class="grid2">
+          <div hidden>
+            <h4>Caminho 1 — CSV bruto de respostas</h4>
+            <p class="note">Uma linha por respondente, itens [SV1]…[TP4] nas colunas.
+            Habilita bootstrap e equivalência real↔sintético.</p>
+            <label>Nome do modelo <input id="raw-name" value="modelo-7s-tp"></label>
+            <label>CSV de respostas <input id="raw-file" type="file" accept=".csv"></label>
+            <button id="btn-import-raw">Calibrar do bruto</button>
+          </div>
+          <div>
+            <h4>Exports do SmartPLS</h4>
+            <p class="note">O what-if roda sobre o modelo <strong>aferido pelo SmartPLS</strong>,
+            sem reestimação. β e R² vêm do diagrama de caminhos.</p>
+            <label>Nome do modelo <input id="pls-name" value="modelo-smartpls"></label>
+            <label>Cross loadings (obrigatório) <input id="pls-cl" type="file" accept=".csv"></label>
+            <label>Fornell-Larcker (obrigatório) <input id="pls-fl" type="file" accept=".csv"></label>
+            <label>Indicator data — original/descritivas (obrigatório) <input id="pls-desc" type="file" accept=".csv"></label>
+            <label>Indicator data — correlations (opcional, melhora a bateria) <input id="pls-corr" type="file" accept=".csv"></label>
+            <label>β por construto (JSON, do diagrama de caminhos)
+              <textarea id="pls-beta" rows="3">{"SV":0.020,"SG":0.345,"SU":-0.113,"SM":0.265,"SF":0.376,"SY":-0.138,"SK":0.004}</textarea></label>
+            <label>R² da Proteção Tecnológica <input id="pls-r2" type="number" step="0.001" min="0.001" max="0.999" value="0.529"></label>
+            <button id="btn-import-pls">Calibrar dos exports SmartPLS</button>
+          </div>
+        </div>
+        <p id="import-msg" class="note"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Artefato acadêmico (UnB/PPCA) · modelo correlacional: what-ifs são projeções sob o modelo estimado,
+    não inferência causal experimental.
+  </footer>
+</div>
+
+<script src="/static/app.js?v=20"></script>
+</body>
+</html>

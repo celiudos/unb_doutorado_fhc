@@ -1,0 +1,33 @@
+/Users/roberio/Documents/Pessoal/UnB/Doutorado/projetos/1407/sistemaDT/twin_api/schemas.py:8: UserWarning: Field name "construct" in "InterventionIn" shadows an attribute in parent "BaseModel"
+  class InterventionIn(BaseModel):
+INFO:     Started server process [7038]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:55530 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55531 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55531 - "GET /static/styles.css?v=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55532 - "GET /static/app.js?v=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55532 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55536 - "POST /auth/token HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55536 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55536 - "GET /models/09fa4e2809b1494f8a1b96cd2f89e0be HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55536 - "GET /models/09fa4e2809b1494f8a1b96cd2f89e0be/baseline HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55537 - "GET /models/09fa4e2809b1494f8a1b96cd2f89e0be/sensitivity HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55538 - "GET /models/09fa4e2809b1494f8a1b96cd2f89e0be/battery HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55538 - "GET /models/09fa4e2809b1494f8a1b96cd2f89e0be/sensitivity HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55538 - "GET /models/09fa4e2809b1494f8a1b96cd2f89e0be/recommendations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55540 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55541 - "GET /static/app.js?v=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55540 - "GET /static/styles.css?v=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55544 - "POST /models/09fa4e2809b1494f8a1b96cd2f89e0be/simulate HTTP/1.1" 201 Created
+INFO:     127.0.0.1:55548 - "POST /auth/token HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55548 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55548 - "GET /models/09fa4e2809b1494f8a1b96cd2f89e0be HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55548 - "GET /models/09fa4e2809b1494f8a1b96cd2f89e0be/baseline HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55549 - "GET /models/09fa4e2809b1494f8a1b96cd2f89e0be/sensitivity HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55550 - "GET /models/09fa4e2809b1494f8a1b96cd2f89e0be/battery HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55550 - "GET /models/09fa4e2809b1494f8a1b96cd2f89e0be/sensitivity HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55550 - "GET /models/09fa4e2809b1494f8a1b96cd2f89e0be/recommendations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55559 - "POST /models/09fa4e2809b1494f8a1b96cd2f89e0be/simulate HTTP/1.1" 201 Created
+INFO:     127.0.0.1:55571 - "POST /models/09fa4e2809b1494f8a1b96cd2f89e0be/simulate HTTP/1.1" 201 Created

@@ -1,0 +1,33 @@
+﻿Cross loadings;Equipe;Estilo de Liderança;Estratégia;Estrutura;Habilidades;Proteção Tecnológica;Sistemas;Valores Compartilhados
+[SF1] Os membros da minha empresa entendem seus papéis e responsabilidades na proteção da tecnologia da empresa.;0.867;0.554;0.570;0.467;0.413;0.502;0.506;0.526
+[SF2] Os membros da minha empresa aderem estritamente aos regulamentos e diretrizes relevantes para proteger a tecnologia da empresa.;0.919;0.631;0.631;0.529;0.527;0.617;0.644;0.580
+[SF3] Os membros da minha empresa recebem treinamento relacionado à proteção tecnológica.;0.824;0.529;0.534;0.427;0.459;0.533;0.492;0.515
+[SF4] Os membros da minha empresa respeitam os gerentes encarregados da proteção tecnológica.;0.869;0.592;0.597;0.540;0.516;0.534;0.493;0.590
+[SG1] Minha empresa possui uma estratégia de longo prazo para a proteção tecnológica.;0.535;0.522;0.831;0.524;0.535;0.568;0.635;0.635
+[SG2] Para minha empresa, a proteção tecnológica é uma prioridade estratégica.;0.641;0.615;0.891;0.608;0.562;0.583;0.638;0.685
+[SG3] Minha empresa possui um plano operacional para execução das ações de proteção tecnológica.;0.576;0.529;0.850;0.548;0.480;0.540;0.613;0.634
+[SG4] Minha empresa investe um orçamento suficiente para proteger sua tecnologia.;0.537;0.532;0.847;0.528;0.531;0.513;0.601;0.587
+[SK1] Na minha empresa, a divisão encarregada da proteção da tecnologia tem expertise em proteção tecnológica.;0.483;0.322;0.551;0.596;0.876;0.391;0.462;0.462
+[SK2] Na minha empresa, os membros do pessoal encarregado da proteção tecnológica têm certificações profissionais.;0.469;0.295;0.525;0.554;0.882;0.378;0.478;0.479
+[SK3] Na minha empresa, a divisão ou o pessoal encarregado da proteção tecnológica recebe o treinamento profissional relevante.;0.509;0.342;0.588;0.628;0.905;0.433;0.508;0.518
+[SK4] Minha empresa possui um manual de resposta para a ocorrência de vazamentos de tecnologia.;0.502;0.262;0.529;0.579;0.893;0.421;0.482;0.472
+[SM1] Minha empresa possui os regulamentos relevantes para proteger sua tecnologia.;0.555;0.512;0.674;0.584;0.525;0.501;0.863;0.656
+[SM2] Minha empresa controla e monitora seus dados técnicos.;0.593;0.489;0.690;0.562;0.517;0.578;0.892;0.612
+[SM3] Minha empresa usa acordos de confidencialidade e não concorrência para proteger sua tecnologia.;0.432;0.451;0.542;0.355;0.345;0.475;0.815;0.531
+[SM4] Minha empresa usa recompensas para funcionários que são excelentes em proteger a tecnologia da empresa e aplica diretrizes previstas para aqueles que violam os regulamentos.;0.482;0.383;0.531;0.382;0.425;0.536;0.785;0.473
+[SU1] Minha empresa possui uma estrutura organizacional sistemática para proteger sua tecnologia.;0.582;0.384;0.613;0.918;0.612;0.467;0.552;0.616
+[SU2] Minha empresa possui um departamento encarregado de suas responsabilidades de proteção tecnológica.;0.444;0.361;0.522;0.876;0.543;0.324;0.458;0.466
+[SU3] Minha empresa possui um gerente encarregado das responsabilidades de proteção tecnológica.;0.424;0.352;0.477;0.809;0.533;0.284;0.412;0.501
+[SU4] Minha empresa opera e gerencia suas responsabilidades de proteção tecnológica de forma eficiente.;0.483;0.325;0.611;0.870;0.609;0.384;0.514;0.644
+[SV2] Minha empresa inclui o conceito de proteção tecnológica em suas metas de gestão.;0.573;0.429;0.682;0.637;0.558;0.478;0.636;0.899
+[SV3] Minha organização está ciente da necessidade de proteção tecnológica.;0.521;0.381;0.653;0.492;0.478;0.458;0.565;0.850
+[SV4] Minha empresa tem uma cultura organizacional que protege sua tecnologia.;0.574;0.468;0.654;0.608;0.492;0.461;0.564;0.872
+[SY1] A equipe de gestão da minha empresa tem um alto nível de interesse em proteção tecnológica.;0.632;0.914;0.604;0.386;0.350;0.399;0.463;0.445
+[SY2] A equipe de gestão da minha empresa reconhece que a proteção tecnológica é importante para as atividades de negócios.;0.551;0.892;0.530;0.310;0.260;0.351;0.464;0.420
+[SY3] A equipe de gestão da minha empresa apoia ativamente a proteção da tecnologia da empresa.;0.630;0.934;0.644;0.390;0.313;0.455;0.553;0.509
+[SY4] A equipe de gestão da minha empresa leva a questão da proteção tecnológica em consideração durante os processos de tomada de decisão.;0.613;0.924;0.570;0.400;0.330;0.412;0.510;0.453
+[TP1] Minha empresa protege bem a confidencialidade relacionada à tecnologia.;0.603;0.461;0.582;0.338;0.399;0.875;0.614;0.539
+[TP2] Minha empresa é melhor no gerenciamento de segurança do que outras empresas.;0.556;0.417;0.584;0.383;0.434;0.866;0.539;0.434
+[TP3] Minha empresa tem menos vazamentos de tecnologia ou incidentes de segurança em comparação com outras empresas.;0.448;0.258;0.482;0.389;0.363;0.804;0.491;0.477
+[TP4] Minha empresa nunca sofreu grandes danos por vazamentos de tecnologia ou incidentes de segurança.;0.481;0.322;0.497;0.338;0.321;0.790;0.423;0.394
+﻿[SV1] Minha empresa compartilha a importância e o valor da proteção tecnológica.;0.563;0.476;0.631;0.544;0.394;0.544;0.608;0.890

@@ -1,0 +1,26 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      # Troque em qualquer implantação que saia da máquina local:
+      TWIN_SECRET: ${TWIN_SECRET:-dev-secret-troque-me}
+      TWIN_USERS: ${TWIN_USERS:-admin:admin123:admin,analista:analista123:analyst,leitor:leitor123:viewer}
+      # Perfil produção (Seção 10.4): descomente para usar Postgres
+      # DATABASE_URL: postgresql+psycopg://twin:twin@db:5432/twin
+    volumes:
+      - twin-var:/app/var
+
+  # db:
+  #   image: postgres:16
+  #   environment:
+  #     POSTGRES_USER: twin
+  #     POSTGRES_PASSWORD: twin
+  #     POSTGRES_DB: twin
+  #   volumes:
+  #     - twin-db:/var/lib/postgresql/data
+
+volumes:
+  twin-var:
+  # twin-db:

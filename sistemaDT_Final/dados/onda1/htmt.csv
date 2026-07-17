@@ -1,0 +1,29 @@
+﻿;Heterotrait-monotrait ratio (HTMT)
+Estilo de Liderança <-> Equipe;0.723
+Estratégia <-> Equipe;0.756
+Estratégia <-> Estilo de Liderança;0.706
+Estrutura <-> Equipe;0.621
+Estrutura <-> Estilo de Liderança;0.444
+Estrutura <-> Estratégia;0.720
+Habilidades <-> Equipe;0.609
+Habilidades <-> Estilo de Liderança;0.370
+Habilidades <-> Estratégia;0.689
+Habilidades <-> Estrutura;0.731
+Proteção Tecnológica <-> Equipe;0.714
+Proteção Tecnológica <-> Estilo de Liderança;0.484
+Proteção Tecnológica <-> Estratégia;0.741
+Proteção Tecnológica <-> Estrutura;0.482
+Proteção Tecnológica <-> Habilidades;0.514
+Sistemas <-> Equipe;0.697
+Sistemas <-> Estilo de Liderança;0.606
+Sistemas <-> Estratégia;0.836
+Sistemas <-> Estrutura;0.631
+Sistemas <-> Habilidades;0.610
+Sistemas <-> Proteção Tecnológica;0.719
+Valores Compartilhados <-> Equipe;0.708
+Valores Compartilhados <-> Estilo de Liderança;0.541
+Valores Compartilhados <-> Estratégia;0.838
+Valores Compartilhados <-> Estrutura;0.714
+Valores Compartilhados <-> Habilidades;0.603
+Valores Compartilhados <-> Proteção Tecnológica;0.627
+Valores Compartilhados <-> Sistemas;0.768
