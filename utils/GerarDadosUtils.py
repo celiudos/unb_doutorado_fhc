@@ -322,13 +322,16 @@ class GerarDadosUtils:
                 "seed": seed,
                 "temperature": temperature,
                 "num_predict": num_predict,
-                # "num_ctx": 8192,
-                # "num_batch": 512,
-                # "top_k": 10,
-                # "top_p": 0.9,
-                # "repeat_penalty": 1.0,
+                "num_ctx": 8192,
+                "num_batch": 512,
+                "top_k": 10,
+                "top_p": 0.9,
+                "repeat_penalty": 1.0,
             },
         )
+        print(f"""
+        response: {response}
+        """)
         return response.message.content
 
     def _get_response_openai(self, prompt, temperature=0.7):
@@ -605,7 +608,11 @@ Distribuição-alvo aproximada por item:
         except json.JSONDecodeError:
             pass
         # Fallback: remove quebras de linha dentro de strings e tenta novamente
-        candidato_limpo = re.sub(r'(?<=":)\s*"([^"]*)"', lambda m: '"' + m.group(1).replace('\n', ' ').replace('\r', '') + '"', candidato)
+        candidato_limpo = re.sub(
+            r'(?<=":)\s*"([^"]*)"',
+            lambda m: '"' + m.group(1).replace("\n", " ").replace("\r", "") + '"',
+            candidato,
+        )
         return json.loads(candidato_limpo)
 
     def _normalizar_respostas(self, resultado, persona):
@@ -619,8 +626,14 @@ Distribuição-alvo aproximada por item:
 
     def responder_persona(self, persona, target_probs, sessao=1):
         prompt = self.montar_prompt_hdt(persona, target_probs)
+        print(f"""
+        prompt: {prompt}
+        """)
         seed = self.seed + sessao * 1000 + int(persona["persona_id"].split("_")[1])
         texto = self.get_response(prompt, seed=seed, temperature=0.8)
+        print(f"""
+        texto: {texto}
+        """)
         resultado = self._extrair_json(texto)
         return self._normalizar_respostas(resultado, persona)
 
